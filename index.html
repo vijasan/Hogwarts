@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hogwarts</title>
+  </head>
+  <body>
+    <h1>Hogwarts Student List</h1>
+
+    <div>
+      <label for="sort-by">Sort by:</label>
+      <select id="sort-by">
+        <option value="first-name">First Name</option>
+        <option value="last-name">Last Name</option>
+        <option value="house">House</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="filter-by-house">Filter by house:</label>
+      <select id="filter-by-house">
+        <option value="all">All</option>
+        <option value="Gryffindor">Gryffindor</option>
+        <option value="Hufflepuff">Hufflepuff</option>
+        <option value="Ravenclaw">Ravenclaw</option>
+        <option value="Slytherin">Slytherin</option>
+      </select>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>House</th>
+        </tr>
+      </thead>
+      <tbody id="student-list">
+        <!-- List of students will be populated here -->
+      </tbody>
+    </table>
+
+    <div id="popup" style="display: none">
+      <img id="student-photo" />
+      <h2 id="student-name"></h2>
+      <p id="student-house"></p>
+      <p id="student-prefect"></p>
+      <button id="expel-btn">Expel Student</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
